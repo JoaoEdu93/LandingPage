@@ -1,0 +1,814 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="de">  <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cobian flat bootstrap landing page</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="robots" content="index,follow">
+
+    <!-- Start Font -->
+	<link type="text/css" rel="stylesheet" href="fonts/open-sans/stylesheet.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"><!-- Font Awesome-->
+
+
+	<!-- End Font -->
+
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" /><!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css/overwrite.css" /><!-- Overwrite -->
+
+    <!-- Start Owl Carousel -->
+    <link type="text/css" rel="stylesheet" href="css/owl/owl.carousel.css" />
+    <link type="text/css" rel="stylesheet" href="css/owl/owl.theme.css" />
+    <link type="text/css" rel="stylesheet" href="css/owl/owl.transitions.css" />
+
+    <!-- Start Masonry -->
+    <link type="text/css" rel="stylesheet" href="css/masonry.css" />
+
+    <!-- prettyPhoto -->
+	<link type="text/css" rel="stylesheet" href="css/prettyPhoto.css">
+
+    <!-- Start Default -->
+	<link type="text/css" rel="stylesheet" href="css/icons.css" /><!-- Icons -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" /><!-- Overwrite -->
+	<link id="skin" type="text/css" rel="stylesheet" href="skins/default.css" /><!-- Color -->
+	<!-- End Default -->
+
+    <!--[if IE 9]>
+        <link rel="stylesheet" type="text/css" href="css/ie9.css">
+    <![endif]-->
+    <!--[if IE 8]>
+        <link rel="stylesheet" type="text/css" href="css/ie8.css">
+    <![endif]-->
+<script>
+function initialize()
+{
+
+  var mapProp = {
+    center: new google.maps.LatLng(41.561514, -8.397210),
+    zoom:18,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+  var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(41.561514, -8.397210),
+    title:"MedQI"
+});
+
+
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+// To add the marker to the map, call setMap();
+marker.setMap(map);
+}
+
+function loadScript()
+{
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = "http://maps.googleapis.com/maps/api/js?key=&sensor=false&callback=initialize";
+  document.body.appendChild(script);
+}
+
+window.onload = loadScript;
+</script>
+
+</head>
+
+<body id="home">
+ 	<!-- Start preloading -->
+	<div id="loading" class="loading-invisible">
+		<div class="loading-center">
+			<div class="loading-center-absolute">
+				<div class="object"></div>
+				<div class="object"></div>
+				<div class="object"></div>
+				<div class="object"></div>
+				<div class="object"></div>
+				<div class="object"></div>
+				<div class="object"></div>
+				<div class="object"></div>
+				<div class="object"></div>
+				<div class="object"></div>
+			</div>
+			<p>Please wait...</p>
+		</div>
+	</div>
+	<script type="text/javascript">
+		  document.getElementById("loading").className = "loading-visible";
+		  var hideDiv = function(){document.getElementById("loading").className = "loading-invisible";};
+		  var oldLoad = window.onload;
+		  var newLoad = oldLoad ? function(){hideDiv.call(this);oldLoad.call(this);} : hideDiv;
+		  window.onload = newLoad;
+	</script>
+	<!-- End preloading -->
+
+    <!-- Start Scroll to top -->
+    <div class="scroll top">
+        <a href="#home"><span class="fa fa-chevron-up"></span></a>
+    </div>
+    <!-- End Scroll to top -->
+
+    <!-- Start Scroll to top -->
+    <div class="scroll top">
+        <a href="#home"><span class="fa fa-chevron-up"></span></a>
+    </div>
+    <!-- End Scroll to top -->
+
+    <!-- Start Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color: rgb(0, 183, 186);">
+        <!-- Start Submenu -->
+        <div class="submenu">
+            <span class="ribbon"></span>
+            <div class="container">
+                <ul class="nav navbar-nav navbar-right" style="background-color: rgb(0, 183, 186);">
+                    <li class="sub-link" style="color: #FFF;"><span class="fa fa-envelope"></span> info@medqi.pt </li>
+                    <li class="sub-link" style="color: #FFF;"><span class="fa fa-phone"></span> +351 253 106 106 </li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Submenu -->
+
+        <!-- Start Mainmenu -->
+        <div class="mainmenu">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myMenu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" style="height: 75px; width: 75px; margin-top: -10px;" href="index.html">
+                    <img style="height: 65px; width: 130px;" src="images/brand/logo1.png" class="logo" alt="">
+                  </a>
+                </div>
+
+                <!-- Navigation Menu -->
+                <div class="collapse navbar-collapse" id="myMenu">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="scroll active"><a href="index.html">Home</a></li>
+                    <li class="scroll"><a href="#features">MedQI</a></li>
+                    <li class="scroll"><a href="#pricing">Oferta</a></li>
+                    <li class="scroll"><a href="#equipa">Equipa</a></li>
+                    <li class="scroll"><a href="#contactos">Contactos</a></li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Mainmenu -->
+    </nav>
+    <!-- End Navigation -->
+
+    <div class="clearfix"></div>
+
+    <!-- Start Home -->
+    <section id="AnimatedBg" class="home bg-animate" style="background-color: rgb(0, 183, 186);">
+		<div class="home-container">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<h1 class="title-one">MedQI</h1>
+						<h4 class="title-two">A solução inteligente para o acompanhamento eficiente dos pacientes e consultas.</h4>
+                        <a href="#medqi_quote" class="btn btn-primary">Saber Mais</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="street"></div>
+    </section>
+    <!-- End Home -->
+
+    <div class="clearfix"></div>
+
+
+    <!-- Start Call to action -->
+    <section id="medqi_quote">
+    <div class="cta-area scroll" >
+        <div class="bg-primary pattern parallax"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <!-- Start Call To Action -->
+                    <div class="ct-action">
+                        <h4 class="title-one">Problema</h4>
+                        <blockquote style="font-size: 25px;">Por vezes a consulta vai toda ao ar, faz-se o registo no papel e depois da consulta tenta-se desenrascar.</blockquote>
+
+                        <h4 class="title-two pull-right">Dr. Jaime Ribeiro</h4>
+                    </div>
+                    <!-- End Call To Action -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- End Call to action -->
+
+        <!-- Start Features -->
+    <section id="features">
+        <div class="container">
+            <!-- Start Title -->
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 title-section">
+                    <h4 class="title"><span>O Produto</span> Porquê utilizar o MedQI?</h4>
+                    <div class="line"><i class="icon icon-24 icon-brightness"></i></div>
+                </div>
+            </div>
+            <!-- End Title -->
+            <!-- Start Features -->
+            <div class="row wrap-feature-two">
+                <div class="col-md-4">
+                    <!-- Start Feature Two Left -->
+                    <ul class="feature-two left">
+                        <li>
+                            <i class="icon icon-64 icon-heart"></i>
+                            <h5>Melhor acompanhamento dos pacientes</h5>
+                            <p>
+                                Acompanhe em tempo real todos os aspectos dos seus pacientes bem como os dos médicos.
+                            </p>
+                        </li>
+
+
+                        <li>
+                            <i class="icon icon-64 icon-contacts"></i>
+                            <h5>Marcação eficiente das consultas</h5>
+                            <p>
+                                Agenda eficientemente todos os pacientes conforme as suas necessidades.
+                            </p>
+                        </li>
+
+                         <li>
+                            <i class="icon icon-64 icon-spaceshuttle"></i>
+                            <h5>Costumizável</h5>
+                            <p>
+                                Completamente configurável para as necessidades do médico ou do gestor da unidade hospitalar.
+                            </p>
+                        </li>
+                    </ul>
+                    <!-- End Feature Two Left -->
+                </div>
+                <div class="col-md-4">
+                    <img src="images/features/medqi.png" class="img-responsive img-feature-two" alt="">
+                </div>
+                <div class="col-md-4">
+                    <!-- Start Feature Two Right -->
+                    <ul class="feature-two right">
+
+                        <li>
+                            <i class="icon icon-64 icon-speedometer"></i>
+                            <h5>Aumento dos indicadores de qualidade</h5>
+                            <p>
+                                Aumente a qualidade dos serviços e melhore os indicadores de qualidade da unidade hospitalar.
+
+                            </p>
+                        </li>
+                        <li>
+                            <i class="icon icon-64 icon-star"></i>
+                            <h5>Fácil de utilizar</h5>
+                            <p>
+                               Uma interface apelativa e fácil de usar. Sem complicações.
+                            </p>
+                        </li>
+                         <li>
+                            <i class="icon icon-64 icon-hourglass"></i>
+                            <h5>Poupa perdas de tempo</h5>
+                            <p>
+                                Não perca tempo na marcação das consultas nem nas avaliações dos pacientes e médicos.
+                            </p>
+                        </li>
+                    </ul>
+                    <!-- End Feature Two Right -->
+                </div>
+            </div>
+            <!-- End Features -->
+        </div>
+    </section>
+    <!-- End Features -->
+
+    <div class="clearfix"></div>
+
+    <!-- Start Work It -->
+    <div class="cta-area scroll" style="color: white;">
+        <div class="bg-primary pattern parallax" ></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <!-- Start Feature Three -->
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 feature-three">
+                            <div class="img-feature">
+                                <span class="count">1</span>
+                                <i class="icon icon-64 icon-sub"></i>
+                            </div>
+                            <h5 style="color: #FFF;">Escolha o melhor plano e fidelize-se</h5>
+                        </div>
+                        <div class="col-md-4 col-sm-4 feature-three">
+                            <div class="img-feature">
+                                <span class="count">2</span>
+                                <i class="icon icon-64 icon-tools"></i>
+                            </div>
+                            <h5 style="color: #FFF;">Instale e configure a aplicação</h5>
+                        </div>
+                        <div class="col-md-4 col-sm-4 feature-three">
+                            <div class="img-feature">
+                                <span class="count">3</span>
+                                <i class="icon icon-64 icon-computer"></i>
+                            </div>
+                            <h5 style="color: #FFF;">Pronta a utilizar rapidamente</h5>
+                        </div>
+                    </div>
+                    <!-- End Feature Three -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Work It -->
+
+
+    <div class="clearfix"></div>
+
+
+    <!-- Start Pricing -->
+    <section id="pricing" >
+        <div class="container">
+            <!-- Start Title -->
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 title-section">
+                    <h4 class="title"><span>Oferta</span> Escolha um dos nossos planos disponíveis</h4>
+                    <div class="line"><i class="icon icon-24 icon-sub"></i></div>
+                </div>
+            </div>
+            <!-- End Title -->
+            <!-- Start Pricing -->
+            <div class="row wrap-price">
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <!-- Start Pricing Info -->
+                    <div class="table-price info">
+                        <div class="title-price">
+                            <h4 style="font-size: 18px;">Particular - Médico</h4>
+                        </div>
+                        <div class="price">
+                            <h2><span>€</span>12<small class="point">.99</small></h2>
+                        </div>
+                        <ul class="list-feature">
+
+                            <li class="current"><strong>Integração </strong>com outras plataformas</li>
+                            <li><strong>Gestão</strong>  dos grupos de risco</li>
+                            <li class="current"><strong>Gestão</strong> dos indicadores de qualidade</li>
+                            <li><strong>Agendamento</strong> Automático</li>
+                            <li class="current"><strong>Acompanhamento</strong> completo do paciente</li>
+                        </ul>
+                        <div class="footer-price">
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                    <!-- End Pricing Info -->
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <!-- Start Pricing Success -->
+                    <div class="table-price success">
+                        <div class="title-price">
+                            <h4 style="font-size: 18px;">Instituição - Plano A</h4>
+                        </div>
+                        <div class="price">
+                            <h2><span>€</span>14<small class="point">.99</small></h2>
+                        </div>
+                        <ul class="list-feature">
+
+                            <li class="current"><strong>Integração </strong>com outras plataformas</li>
+                            <li><strong>Gestão</strong>  dos grupos de risco</li>
+                            <li class="current"><strong>Gestão</strong> dos indicadores de qualidade</li>
+                            <li><strong>Agendamento</strong> Automático</li>
+                            <li class="current"><strong>Acompanhamento</strong> completo do paciente</li>
+                        </ul>
+                        <div class="footer-price">
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                    <!-- End Pricing Success -->
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <!-- Start Pricing Danger -->
+                    <div class="table-price success">
+                        <div class="title-price">
+                            <h4 style="font-size: 18px;">Instituição - Plano B</h4>
+                        </div>
+                        <div class="price">
+                            <h2><span>€</span>19<small class="point">.99</small></h2>
+                        </div>
+                        <ul class="list-feature">
+
+                            <li class="current"><strong>Integração </strong>com outras plataformas</li>
+                            <li><strong>Gestão</strong>  dos grupos de risco</li>
+                            <li class="current"><strong>Gestão</strong> dos indicadores de qualidade</li>
+                            <li><strong>Agendamento</strong> Automático</li>
+                            <li class="current"><strong>Acompanhamento</strong> completo do paciente</li>
+                        </ul>
+                        <div class="footer-price">
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                    <!-- End Pricing Danger -->
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <!-- Start Pricing Warning -->
+                    <div class="table-price success">
+                        <div class="title-price">
+                            <h4 style="font-size: 18px;">Instituição - PLano C</h4>
+                        </div>
+                        <div class="price">
+                            <h2><span>€</span>24<small class="point">.99</small></h2>
+                        </div>
+                      <ul class="list-feature">
+
+                            <li class="current"><strong>Integração </strong>com outras plataformas</li>
+                            <li><strong>Gestão</strong>  dos grupos de risco</li>
+                            <li class="current"><strong>Gestão</strong> dos indicadores de qualidade</li>
+                            <li><strong>Agendamento</strong> Automático</li>
+                            <li class="current"><strong>Acompanhamento</strong> completo do paciente</li>
+                        </ul>
+                        <div class="footer-price">
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                    <!-- End Pricing Danger -->
+                </div>
+            </div>
+            <!-- End Pricing -->
+        </div>
+    </section>
+    <!-- End Pricing -->
+
+    <div class="clearfix"></div>
+
+
+    <!-- Start Article -->
+    <section id="equipa" class="gray">
+
+        <div class="container">
+            <!-- Start Title -->
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 title-section">
+                    <h4 class="title"><span>Equipa</span> Saiba quem somos</h4>
+                    <div class="line"><i class="icon icon-24  icon-briefcase"></i></div>
+                </div>
+            </div>
+            <!-- End Title -->
+
+			<!-- Start Blog -->
+            <div class="row">
+                <div id="post" class="masonry wrap-post">
+                    <div class="grid-sizer col-md-6 col-sm-12 col-xs-12"></div>
+                    <div class="grid-item col-md-6 col-sm-12 col-xs-12">
+                        <!-- Start Article 01 -->
+                        <div class="row post">
+                            <div class="col-md-6 col-sm-6 img-post">
+                                <img src="images/blog/mymug.jpg" class="img-responsive" alt="">
+                            </div>
+                            <div class="col-md-6 col-sm-6 content-post">
+                                <h5>José Pedro Simão</h5>
+                                <ul class="meta-post">
+                                    <li><span class="fa fa-calendar"></span>23 anos</li>
+
+                                    <li><span class="fa fa-map-marker"></span>Braga, Portugal</li>
+                                </ul>
+                                <p>
+                                    Estudante de mestrado em Engenharia Informática da Universidade do Minho.
+                                </p>
+                                <h5>Badges</h5>
+                               <div class="line"><i class="icon icon-24 icon-genius"></i>  <i class="icon icon-24 icon-genius"></i></div>
+                            </div>
+                        </div>
+                        <!-- End Article 01 -->
+                    </div>
+                   <div class="grid-item col-md-6 col-sm-12 col-xs-12">
+                        <!-- Start Article 02 -->
+                        <div class="row post current">
+                            <div class="col-md-6 col-sm-6 img-post">
+                                <img src="images/blog/2.jpg" class="img-responsive" alt="">
+                            </div>
+                            <div class="col-md-6 col-sm-6 content-post">
+                                <h5>José Pedro Simão</h5>
+                                <ul class="meta-post">
+                                    <li><span class="fa fa-calendar"></span>23 anos</li>
+
+                                    <li><span class="fa fa-map-marker"></span>Braga, Portugal</li>
+                                </ul>
+                                <p>
+                                    Estudante de mestrado em Engenharia Informática da Universidade do Minho.
+                                </p>
+                                <h5>Badges</h5>
+                               <div class="line"><i class="icon icon-24 icon-genius"></i>  <i class="icon icon-24 icon-genius"></i></div>
+                            </div>
+                        </div>
+                        <!-- End Article 02 -->
+                    </div>
+                    <div class="grid-item col-md-6 col-sm-12 col-xs-12">
+                        <!-- Start Article 03 -->
+                        <div class="row post">
+                            <div class="col-md-6 col-sm-6 col-md-push-6 img-post">
+                                <img src="images/blog/3.jpg" class="img-responsive" alt="">
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-md-pull-6 content-post">
+                                <h5><a href="index-alt3.html#">Civibus inciderint ei vim assum</a></h5>
+                                <ul class="meta-post">
+                                    <li><a href="index-alt3.html#"><span class="fa fa-calendar"></span> 06/10/2015</a></li>
+                                    <li><a href="index-alt3.html#"><span class="fa fa-thumb-tack"></span> App</a></li>
+                                    <li><a href="index-alt3.html#"><span class="fa fa-comment-o"></span> 3</a></li>
+                                </ul>
+                                <p>
+                                    Habeo vidisse posidonium ex mei. Modo viderer vituperata in has.
+                                </p>
+                                <a href="singlepost.html" class="btn btn-primary">Read more</a>
+                            </div>
+                        </div>
+                        <!-- End Article 03 -->
+                    </div>
+                    <div class="grid-item col-md-6 col-sm-12 col-xs-12">
+                        <!-- Start Article 04 -->
+                        <div class="row post current">
+                            <div class="col-md-6 col-sm-6 col-md-push-6 img-post">
+                                <img src="images/blog/4.jpg" class="img-responsive" alt="">
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-md-pull-6 content-post">
+                                <h5><a href="index-alt3.html#">At nonumy aeterno nam esse</a></h5>
+                                <ul class="meta-post">
+                                    <li><a href="index-alt3.html#"><span class="fa fa-calendar"></span> 06/10/2015</a></li>
+                                    <li><a href="index-alt3.html#"><span class="fa fa-thumb-tack"></span> App</a></li>
+                                    <li><a href="index-alt3.html#"><span class="fa fa-comment-o"></span> 3</a></li>
+                                </ul>
+                                <p>
+                                    Habeo vidisse posidonium ex mei. Modo viderer vituperata in has.
+                                </p>
+                                <a href="singlepost.html" class="btn btn-primary">Read more</a>
+                            </div>
+                        </div>
+                        <!-- End Article 04 -->
+                    </div>
+
+                     <div class="grid-item col-md-6 col-sm-12 col-xs-12">
+                        <!-- Start Article 01 -->
+                        <div class="row post">
+                            <div class="col-md-6 col-sm-6 img-post">
+                                <img src="images/blog/mymug.jpg" class="img-responsive" alt="">
+                            </div>
+                            <div class="col-md-6 col-sm-6 content-post">
+                                <h5><a href="index-alt2.html#">José Pedro Simão</a></h5>
+                                <ul class="meta-post">
+                                    <li><a href="index-alt2.html#"><span class="fa fa-calendar"></span>23 anos</a></li>
+
+                                    <li><a href="index-alt2.html#"><span class="fa fa-map-marker"></span>Braga, Portugal</a></li>
+                                </ul>
+                                <p>
+                                    Estudante do mestrado em Engenharia Informática da Universidade do Minho.
+                                </p>
+                                <h5>Badges</h5>
+                               <div class="line"><i class="icon icon-24 icon-genius"></i>  <i class="icon icon-24 icon-genius"></i></div>
+                            </div>
+                        </div>
+                        <!-- End Article 01 -->
+                    </div>
+                   <div class="grid-item col-md-6 col-sm-12 col-xs-12">
+                        <!-- Start Article 02 -->
+                        <div class="row post current">
+                            <div class="col-md-6 col-sm-6 img-post">
+                                <img src="images/blog/2.jpg" class="img-responsive" alt="">
+                            </div>
+                            <div class="col-md-6 col-sm-6 content-post">
+                                <h5><a href="index-alt3.html#">Mei ad iudico appetere ecusabo</a></h5>
+                                <ul class="meta-post">
+                                    <li><a href="index-alt3.html#"><span class="fa fa-calendar"></span> 06/10/2015</a></li>
+                                    <li><a href="index-alt3.html#"><span class="fa fa-thumb-tack"></span> App</a></li>
+                                    <li><a href="index-alt3.html#"><span class="fa fa-comment-o"></span> 3</a></li>
+                                </ul>
+                                <p>
+                                    Habeo vidisse posidonium ex mei. Modo viderer vituperata in has.
+                                </p>
+                                <a href="singlepost.html" class="btn btn-primary">Read more</a>
+                            </div>
+                        </div>
+                        <!-- End Article 02 -->
+                    </div>
+                    <div class="grid-item col-md-6 col-sm-12 col-xs-12">
+                        <!-- Start Article 03 -->
+                        <div class="row post">
+                            <div class="col-md-6 col-sm-6 col-md-push-6 img-post">
+                                <img src="images/blog/3.jpg" class="img-responsive" alt="">
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-md-pull-6 content-post">
+                                <h5><a href="index-alt3.html#">Civibus inciderint ei vim assum</a></h5>
+                                <ul class="meta-post">
+                                    <li><a href="index-alt3.html#"><span class="fa fa-calendar"></span> 06/10/2015</a></li>
+                                    <li><a href="index-alt3.html#"><span class="fa fa-thumb-tack"></span> App</a></li>
+                                    <li><a href="index-alt3.html#"><span class="fa fa-comment-o"></span> 3</a></li>
+                                </ul>
+                                <p>
+                                    Habeo vidisse posidonium ex mei. Modo viderer vituperata in has.
+                                </p>
+                                <a href="singlepost.html" class="btn btn-primary">Read more</a>
+                            </div>
+                        </div>
+                        <!-- End Article 03 -->
+                    </div>
+                    <div class="grid-item col-md-6 col-sm-12 col-xs-12">
+                        <!-- Start Article 04 -->
+                        <div class="row post current">
+                            <div class="col-md-6 col-sm-6 col-md-push-6 img-post">
+                                <img src="images/blog/4.jpg" class="img-responsive" alt="">
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-md-pull-6 content-post">
+                                <h5><a href="index-alt3.html#">At nonumy aeterno nam esse</a></h5>
+                                <ul class="meta-post">
+                                    <li><a href="index-alt3.html#"><span class="fa fa-calendar"></span> 06/10/2015</a></li>
+                                    <li><a href="index-alt3.html#"><span class="fa fa-thumb-tack"></span> App</a></li>
+                                    <li><a href="index-alt3.html#"><span class="fa fa-comment-o"></span> 3</a></li>
+                                </ul>
+                                <p>
+                                    Habeo vidisse posidonium ex mei. Modo viderer vituperata in has.
+                                </p>
+                                <a href="singlepost.html" class="btn btn-primary">Read more</a>
+                            </div>
+                        </div>
+                        <!-- End Article 04 -->
+                    </div>
+                </div>
+            </div>
+			<!-- End Blog -->
+        </div>
+    </section>
+    <!-- End Article -->
+ <div class="clearfix"></div>
+
+    <!-- Start Work It -->
+    <div class="cta-area scroll" style="color: white;">
+        <div class="bg-primary pattern parallax" ></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                <h4 align="center" style="color: white;">Saiba mais sobre nós, não exite em contactar-nos!</h4>
+                    <!-- Start Feature Three -->
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 feature-three">
+                            <div class="img-feature">
+                                <i class="icon icon-64 icon-email"></i>
+                            </div>
+                            <h5 style="color: #FFF;">Envie-nos um email</h5>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4 feature-three">
+                            <div class="img-feature">
+                                <i class="icon icon-64  icon-gps"></i>
+                            </div>
+                            <h5 style="color: #FFF;">Visite o nosso escritório</h5>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4 feature-three">
+                            <div class="img-feature">
+                                <i class="icon icon-64 icon-phone"></i>
+                            </div>
+                            <h5 style="color: #FFF;">Entre em contacto por telefone</h5>
+                        </div>
+
+                    </div>
+                    <!-- End Feature Three -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Work It -->
+
+    <div class="clearfix"></div>
+
+           <!-- Start Features -->
+    <section id="contactos">
+        <div class="container">
+            <!-- Start Title -->
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 title-section">
+                    <h4 class="title"><span>Contactos</span> Escolha a melhor forma para nos contactar!</h4>
+                    <div class="line"><i class="icon icon-24 icon-global"></i></div>
+                </div>
+            </div>
+            <!-- End Title -->
+            <!-- Start Features -->
+            <div class="row wrap-feature-two">
+                <div class="col-md-6">
+                    <!-- Start Feature Two Left -->
+                    <ul class="feature-two left">
+                        <li>
+                            <i class="icon icon-64 icon-email"></i>
+                            <h5>Envie-nos um email e receba suporte online</h5>
+                             <p style="font-size: 18px;">
+                                info@medqi.pt
+                            </p>
+                        </li>
+
+                        <li>
+                            <i class="icon icon-64 icon-gps"></i>
+                            <h5>Visite-nos na Universidade do Minho</h5>
+                            <p style="font-size: 18px;">
+                                Sala 1.05 - Departamento de Informática da Universidade do Minho, Campus de Gualtar
+                            </p>
+                        </li>
+
+                         <li>
+                            <i class="icon icon-64 icon-phone"></i>
+                            <h5>Contacto-nos para a nossa linha telefónica</h5>
+                             <p style="font-size: 18px;">
+                               +351 253 106 106
+                            </p>
+                        </li>
+                    </ul>
+                    <!-- End Feature Two Left -->
+                </div>
+
+                <div class="col-md-6">
+                    <!-- Start Feature Two Right -->
+
+                           <div id="googleMap" style="width:500px;height:350px;"></div>
+
+
+
+                    <!-- End Feature Two Right -->
+                </div>
+            </div>
+            <!-- End Features -->
+        </div>
+    </section>
+    <!-- End Features -->
+     <div class="clearfix"></div>
+
+    <!-- Start Footer -->
+    <footer>
+
+        <div class="sub-footer">
+
+           <a href="index.html">MedQI</a> - Universidade do Minho - 2015 &copy; Copyright
+
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+	<!-- START JAVASCRIPT -->
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing-1.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- JavaScript animatedBg -->
+	<script src="js/animatedBg/animatedBg-setting.js"></script>
+
+    <!-- Scrollspy -->
+	<script src="js/scrollspy/scrollspy.js"></script>
+
+    <!-- Owl Script -->
+    <script type="text/javascript" src="js/owl/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/owl/setting.js"></script>
+
+    <!-- masonry -->
+	<script src="js/masonry/masonry-3.1.4.js"></script>
+	<script src="js/masonry/masonry.filter.js"></script>
+	<script src="js/masonry/setting.js"></script>
+
+    <!-- prettyPhoto -->
+	<script src="js/prettyPhoto/jquery.prettyPhoto.js"></script>
+	<script src="js/prettyPhoto/setting.js"></script>
+
+    <!-- Parallax -->
+	<script src="js/parallax/jquery.parallax-1.1.3.js"></script>
+	<script src="js/parallax/setting.js"></script>
+
+    <!--[if lte IE 9]>
+    	<script src="js/tweecool/jquery.xdomainrequest.min.js"></script>
+	<![endif]-->
+	<!-- Twitter Feed -->
+	<script src="js/tweecool/tweecool.js"></script>
+	<script src="js/tweecool/setting.js"></script>
+
+    <!-- My Script -->
+    <script type="text/javascript" src="js/custom.js"></script>
+	<!-- END JAVASCRIPT -->
+
+	<!-- Theme option-->
+	<script src="js/theme-option/demosetting.js"></script>
+</body>
+</html>
